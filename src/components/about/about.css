@@ -10,6 +10,7 @@
 .flex-container-about {
     display: flex;
     margin-top: 30px;
+    text-align: left;
     position: relative;
     height: auto;
     width: auto;
