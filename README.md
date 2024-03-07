@@ -1,85 +1,88 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [Portfolio-React](#portfolio-react)
+      
+    + [In the components folder exist img and  components folder](#in-the-components-folder-exist-img-and-components-folder-)
+    
+     + [Component list:](#component-list)
+   * [Deployment in GitHub Pages](#deployment-in-github-pages)
+         - [install ](#install)
+      + [Add in package.json](#add-in-packagejson)
+         - [add in "scripts":](#add-in-scripts)
+      + [Run command](#run-command)
+ + [Should you have any inquiries, please do not hesitate to reach out to me. ](#should-you-have-any-inquiries-please-do-not-hesitate-to-reach-out-to-me)
 
-## Available Scripts
+<!-- TOC end -->
 
-In the project directory, you can run:
+<!-- TOC --><a name="portfolio-react"></a>
+# Portfolio-React
 
-### `npm start`
+Live: https://bishworup11.github.io/Portfolio-React/index.html
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This is a Portfolio web application build using React.js. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Languages Used in this project:
+-   HTML
+-   CSS
+-   Java Script
 
-### `npm test`
+Framework
+-   React js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This web app is a single-page application that includes various components listed below. To avoid repeating code, we've made a reusable component. This helps keep the code clean and easy to use again
 
-### `npm run build`
+<!-- TOC --><a name="in-the-components-folder-exist-img-and-components-folder-"></a>
+### In the components folder exist img and  components folder .
+ 
+   - <b>header</b>: In header folder write Header component and header css file
+   - <b> intro</b>: In intro folder write intro component and header css file 
+   - <b>about </b>: In about folder write the about component or section also css for the component.
+   - <b>featurProject</b>: In featurProjec folder write the FeaturProjec component  also css for the component.
+   - <b>OtherProject</b> : Write otherProject react code and css  
+   - <b> contact</b>: In contact folder write the contact component or section also css for the component.
+   - And so on.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- TOC --><a name="component-list"></a>
+### Component list:
+- <b>Header.js:</b> This is navbar and button like "Hire Me" ,"Resume"
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- <b>Intro.js : </b>There are my Portfolio Intro
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- <b>About.js :</b> Write about section of the Portfolio and my picture.
 
-### `npm run eject`
+- <b>Experience.js : </b> Here write the experience component for the Portfolio.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- <b>FeatureProject.js : </b> Write the project details of the Portfolio.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- <b>OtherProject.js : </b>write other project details it is hide normally there are see more button . When we click see more than it is visible 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- <b>Contact.js: </b> Write the contact info and process of contact 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<!-- TOC --><a name="deployment-in-github-pages"></a>
+## Deployment in GitHub Pages
 
-## Learn More
+<!-- TOC --><a name="install"></a>
+#### install 
+`npm install gh-pages --save-dev`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-### Deployment in gitHub pages
+<!-- TOC --><a name="add-in-packagejson"></a>
+### Add in package.json
 
 "homepage": "https://bishworup11.github.io/Portfolio-React",
+<!-- TOC --><a name="add-in-scripts"></a>
+#### add in "scripts":
 
-add in "scripts":
+ ` "predeploy": "npm run build" `
+ 
+`"deploy": "gh-pages -d build"`
 
- "predeploy": "npm run build",
-"deploy": "gh-pages -d build"
+<!-- TOC --><a name="run-command"></a>
+### Run command
+`npm run build`
 
-### run command
-npm run build
-npm run deploy
+`npm run deploy`
 
 
+<!-- TOC --><a name="should-you-have-any-inquiries-please-do-not-hesitate-to-reach-out-to-me"></a>
+### Should you have any inquiries, please do not hesitate to reach out to me. 
+
+Email: bishworupmollik@gmail.com
