@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 1px;
+    padding: 0;
+    /* font-size: 20px; */
+    color: rgb(44, 44, 44);
+
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+  /* 2 side horizontal line title */
+
+  h1 {
+    overflow: hidden;
+    text-align: center;
+   }
+   h1:before,
+   h1:after {
+    background-color: #333;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+   }
+   h1:before {
+    right: 0.5em;
+    margin-left: -50%;
+   }
+   h1:after {
+    left: 0.5em;
+    margin-right: -50%;
+   }
+
+
+#other-project{
+    /* background-color: #eee9e9; */
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 15%;
+    padding-right: 15%;
+     display: none; 
+   
+
+  }
+
+.box-other{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background-color:rgb(204, 204, 204);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+   
+  }
+
+
+.row {
+    display: flex; 
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  
+  /* Create four equal columns */
+  .column {
+    display: flex;
+    flex: 35%;
+    height: 25%;
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .seeMore{
+    /* background-color: #eee9e9; */
+    display: flex ;
+    justify-content: center;
+    
+  }
+  #showMore{
+    border: 2px solid rgb(188, 182, 182);
+     /* Adjust border-radius for smoother rounded corners */
+    border-radius: 5px;
+    height: 35px;
+    text-align: center;
+    padding: 3px 5px;
+    margin: 5px;
+  }
+
+  #showMore:hover {
+    border: 2px solid rgb(93, 91, 91);
+    background-color: #eee9e9;
+}
+
+
+
+  @media screen and (max-width: 992px) {
+    .column {
+      flex: 50%;
+    }
+  }
+  
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+ 

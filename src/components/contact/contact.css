@@ -1,0 +1,82 @@
+.contact-style{
+    background-color: #eee9e9;
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.contact-style>div:first-child{
+    margin-bottom: 50px;
+}
+.contact-style>p:first-child{
+    margin-bottom: 50px;
+}
+
+.contact-style>div>img,
+.contact-style>div>a>img{
+    width: 25px;
+    margin-right: 5px;
+    margin-left: 5px;
+
+}
+/* form */
+#contact-form{
+    flex-direction: column;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: none; 
+}
+
+#fname{
+    
+    height: 30px;
+    /* width: 50%; */
+}
+
+
+#contact-send-email{
+    height: 30px;
+    /* width: 50%; */
+   
+}
+
+#contact-send-messege{
+    height: 100px;
+    /* width: 50%; */
+
+}
+
+
+.write-messege-button-style {
+  
+    border: 2px solid rgb(188, 182, 182);
+     /* Adjust border-radius for smoother rounded corners */
+    border-radius: 5px;
+    height: 25px;
+    text-align: center;
+    padding: 3px 5px;
+    margin: 5px;
+   
+}
+
+.write-messege-button-style:hover {
+    background: #cecece;
+    border: 1px solid rgb(193, 186, 186);
+     /* Adjust border-radius for smoother rounded corners */
+    border-radius: 5px;
+    height: 25px;
+    text-align: center;
+    padding: 3px 5px;
+    margin: 5px;
+   
+}
+
+
+@media screen and (max-width: 768px) {
+    .contact-style {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
