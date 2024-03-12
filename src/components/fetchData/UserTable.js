@@ -1,5 +1,5 @@
 import React from 'react';
-import './fetchData.css'; // Import the external CSS file
+import './fetchData.css'; 
 
 export default function UserTable({ users }) {
     function generateUserCard(user) {

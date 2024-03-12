@@ -25,12 +25,12 @@ export default function FetchData() {
 
   return (
     
-     <div style={{ paddingTop: '60px', paddingLeft: '60px', paddingRight: '60px' }} id="Callback1">
+     <div style={{ paddingTop: '60px', paddingLeft: '15%', paddingRight: '15%' }} id="Callback1">
 
         <h1> Fetch Data </h1>
 
         <div className=''>
-                {!users?<h2 style={{colro:'red'}}>Loading</h2>:<UserTable users={users}></UserTable>}
+                {!users?<h2 style={{color:'red'}}>Loading</h2>:<UserTable users={users}></UserTable>}
              
             </div>
    

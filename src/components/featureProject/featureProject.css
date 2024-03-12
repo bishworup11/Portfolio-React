@@ -42,7 +42,7 @@
 
     .feature-project-text {
         width: 100%; /* Set width to 100% for full width on smaller screens */
-        text-align: center; /* Center align text on smaller screens */
+        text-align: left; /* Center align text on smaller screens */
         margin-left: 0; /* Remove left margin */
         padding-right: 0; /* Remove right padding */
         padding-top: 10px;
@@ -65,7 +65,7 @@
     
     .feature-project-text {
         width: 100%; /* Set width to 100% for full width on smaller screens */
-        text-align: center; /* Center align text on smaller screens */
+        text-align: left; /* Center align text on smaller screens */
         margin-left: 0; /* Remove left margin */
         padding-right: 0; /* Remove right padding */
         /* padding-top: 10px;

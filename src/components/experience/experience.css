@@ -81,7 +81,7 @@
     .experience-ul1,
     .experience-ul2 {
         flex: 100%;
-        text-align: center;
+        text-align: left;
     }
 }
 
