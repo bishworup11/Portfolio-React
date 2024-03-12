@@ -9,6 +9,7 @@ import Experience from './components/experience/Experience';
 import FeatureProject from './components/featureProject/FeatureProject';
 import OtherProject from './components/otherProject/OtherProject';
 import Contact from './components/contact/Contact';
+import FetchData from './components/fetchData/FetchData';
 
 function App() {
   return (
@@ -20,7 +21,9 @@ function App() {
          <Experience></Experience>
          <FeatureProject></FeatureProject>
          <OtherProject></OtherProject>
+         <FetchData></FetchData>
          <Contact></Contact>
+         
          <Routes>
     
     {/* <Route path="/" element={<Layout />}></Route> */}

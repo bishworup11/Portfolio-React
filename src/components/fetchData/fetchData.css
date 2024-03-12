@@ -1,0 +1,20 @@
+/* Responsive styles for UserTable */
+#Callback1 {
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 15%;
+}
+@media screen and (max-width: 768px) {
+    /* Adjust padding for smaller screens */
+    #Callback1 {
+        padding: 30px;
+    }
+    /* Make table cells stack on top of each other on smaller screens */
+    table, th, td {
+        display: block;
+    }
+    /* Center text alignment for table header and data cells */
+    th, td {
+        text-align: center;
+    }
+}
