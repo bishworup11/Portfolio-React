@@ -18,10 +18,10 @@ function App() {
          <Header></Header>    
          <Intro></Intro>
          <About></About>
+         <FetchData></FetchData>
          <Experience></Experience>
          <FeatureProject></FeatureProject>
          <OtherProject></OtherProject>
-         <FetchData></FetchData>
          <Contact></Contact>
          
          <Routes>

@@ -11,7 +11,6 @@ export default function FetchData() {
             const response = await fetch('https://dummyjson.com/users');
             const obj = await response.json();
             const data = obj.users;
-            console.log(data);
             if (data && data.length > 0) {
                 setUsers(data.slice(0, 5));
             }
@@ -24,13 +23,6 @@ export default function FetchData() {
         getUsersData();
     }, []);
 
-    function handleClickShowRecommend() {
-        setUsers(null);
-        getUsersData();
-    }
-
-
-
   return (
     
      <div style={{ paddingTop: '60px', paddingLeft: '60px', paddingRight: '60px' }} id="Callback1">
@@ -38,7 +30,7 @@ export default function FetchData() {
         <h1> Fetch Data </h1>
 
         <div className=''>
-                {!users?<h2>adfadf</h2>:<UserTable users={users}></UserTable>}
+                {!users?<h2 style={{colro:'red'}}>Loading</h2>:<UserTable users={users}></UserTable>}
              
             </div>
    
