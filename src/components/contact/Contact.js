@@ -6,9 +6,6 @@ import Form1 from './Form1';
 
 export default function Contact() {
 
-
-    
-
   return (
 
     <div id="contact" className="contact-style">
@@ -23,7 +20,7 @@ export default function Contact() {
         </p>
           <Form1></Form1>
           
-        <div Style="margin: 10px">
+        <div  style={{margin:"10px", marginTop:"100px"}}>
             <a href="#"><img src={github}/> </a>
             <a href="#"><img src={linkedin} /> </a>
         </div>

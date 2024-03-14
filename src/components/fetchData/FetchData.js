@@ -1,27 +1,20 @@
 import React, { useEffect, useState } from 'react'
 import UserTable from './UserTable';
+import useFetch from '../CustomHook/useFetch';
+
+
 
 
 export default function FetchData() {
 
     const [users, setUsers] = useState(null);
+    const dataFetch = useFetch("https://dummyjson.com/users");
 
-    const getUsersData = async () => {
-        try {
-            const response = await fetch('https://dummyjson.com/users');
-            const obj = await response.json();
-            const data = obj.users;
-            if (data && data.length > 0) {
-                setUsers(data.slice(0, 5));
-            }
-        } catch (error) {
-            console.error('Error fetching user data:', error);
-        }
-    };
-
+  
     useEffect(() => {
-        getUsersData();
-    }, []);
+        const [data] = dataFetch;
+        if(data) setUsers(data.users);
+    }, [dataFetch]);
 
   return (
     

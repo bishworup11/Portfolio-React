@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './header.css';
 import logo from '../img/logo.png';
 import navbarIcon from '../img/navbar1.png';
@@ -30,23 +31,26 @@ export default function Header() {
   return (
     <header className="flex-container navbar-style">
       <div>
-        <a className="log" href="index.html">
-          <img height="50px" src={logo} alt="Home page" />
-        </a>
+        <Link to='/'> <img height="50px" src={logo} alt="Home page" /></Link>
       </div>
       <nav>
         <ul className="flex-container displayNone">
-          <li className="nav-item">
-            <a href="#about" title="about"> About</a>
+        <li className="nav-item">
+          <Link to='/fetchdata'>FetchData</Link>
           </li>
           <li className="nav-item">
-            <a href="#experience" title="Experience"> Experience</a>
+          <Link to='/about'>About</Link>
           </li>
           <li className="nav-item">
-            <a href="#feature-project" title="Project"> Project</a>
+            <Link to='/Experience'>Experience</Link>
           </li>
           <li className="nav-item">
-            <a href="#contact" title="Contact"> Contact</a>
+            
+            <Link to='/Project'>Project</Link>
+          </li>
+          <li className="nav-item">
+          
+            <Link to='/Contact'>Contact</Link>
           </li>
         </ul>
       </nav>

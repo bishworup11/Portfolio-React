@@ -149,8 +149,8 @@ export default function OtherProject() {
     </div>
    
  
-     {/* <span onclick={cl} classNameName="seeMore">  <label id="showMore" Style="padding-top: 10px;">Show More</label> <img id="img1" height="40px" src="img/viewmore.png" alt="hide" /> </span> */}
-     <span onClick={cl} className="seeMore">  <label id="showMore" style={{paddingTop: "10px"}}>Show More</label> <img id="img1" height="40px" src={viewMore} alt="hide" /> </span>
+    <a href="#other-project" title="about"> <span onClick={cl} className="seeMore">  <label id="showMore" style={{paddingTop: "10px"}}>Show More</label> <img id="img1" height="40px" src={viewMore} alt="hide" /> </span> </a>
+    
 
       
     </div>

@@ -15,19 +15,20 @@ function App() {
   return (
     <div className="App">
          <BrowserRouter>
-         <Header></Header>    
-         <Intro></Intro>
-         <About></About>
-         <FetchData></FetchData>
-         <Experience></Experience>
-         <FeatureProject></FeatureProject>
-         <OtherProject></OtherProject>
-         <Contact></Contact>
          
+         <Header />
          <Routes>
     
-    {/* <Route path="/" element={<Layout />}></Route> */}
-    </Routes>     
+         <Route index element={<Intro />} />
+          <Route path='about' element={<About />} />
+          <Route path='fetchdata' element={<FetchData />} />
+          <Route path='experience' element={<Experience />} />
+          <Route path='project' element={<FeatureProject />} />
+          
+          <Route path='contact' element={<Contact />} />
+         
+
+       </Routes>     
         
        
          </BrowserRouter>  

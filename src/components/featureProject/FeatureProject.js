@@ -2,6 +2,7 @@ import React from "react";
 import "./featureProject.css";
 import githubIcon from "../img/github.png";
 import externalIcon from "../img/external.png";
+import OtherProject from "../otherProject/OtherProject";
 
 export default function FeatureProject() {
   return (
@@ -69,6 +70,7 @@ export default function FeatureProject() {
         </div>
         <div style={{ width: "50%" }} className="box"></div>
       </section>
+      <OtherProject></OtherProject>
     </div>
   );
 }
