@@ -19,12 +19,12 @@ function App() {
          <Header />
          <Routes>
     
-         <Route index element={<Intro />} />
+         <Route index element={<Intro/>} />
+          <Route path='*' element={<Intro />} />
           <Route path='about' element={<About />} />
           <Route path='fetchdata' element={<FetchData />} />
           <Route path='experience' element={<Experience />} />
           <Route path='project' element={<FeatureProject />} />
-          
           <Route path='contact' element={<Contact />} />
          
 

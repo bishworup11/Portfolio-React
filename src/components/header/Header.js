@@ -35,7 +35,7 @@ export default function Header() {
       </div>
       <nav>
         <ul className="flex-container displayNone">
-        <li className="nav-item">
+          <li className="nav-item">
           <Link to='/fetchdata'>FetchData</Link>
           </li>
           <li className="nav-item">
