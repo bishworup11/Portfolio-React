@@ -10,6 +10,7 @@ import FeatureProject from './components/featureProject/FeatureProject';
 import OtherProject from './components/otherProject/OtherProject';
 import Contact from './components/contact/Contact';
 import FetchData from './components/fetchData/FetchData';
+import FetchQuote from './components/fetchQuote/FetchQuote.js';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path='*' element={<Intro />} />
           <Route path='about' element={<About />} />
           <Route path='fetchdata' element={<FetchData />} />
+          <Route path='fetchquote' element={<FetchQuote/>} />
           <Route path='experience' element={<Experience />} />
           <Route path='project' element={<FeatureProject />} />
           <Route path='contact' element={<Contact />} />

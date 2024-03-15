@@ -17,8 +17,6 @@ export default function Header() {
           displayNone[0].style.display = "flex";
           displayNone[1].style.display = "flex";
           displayNone[2].style.display = "flex";
-        //   displayNone[].style.display = "flex";
-          // writeMessage.textContent="Submit"
         } else {
           displayNone[0].style.display = "none";
           displayNone[1].style.display = "none";
@@ -35,6 +33,9 @@ export default function Header() {
       </div>
       <nav>
         <ul className="flex-container displayNone">
+        <li className="nav-item">
+          <Link to='/fetchquote'>FetchQuote</Link>
+          </li>
           <li className="nav-item">
           <Link to='/fetchdata'>FetchData</Link>
           </li>
